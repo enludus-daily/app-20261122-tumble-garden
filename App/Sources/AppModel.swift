@@ -167,7 +167,7 @@ final class AppModel {
     }
 
     func finishOnboarding() {
-        withAnimation(.easeOut(duration: 0.35)) { onboarded = true }
+        withAnimation(motionOff ? nil : .easeOut(duration: 0.35)) { onboarded = true }
         persist()
         play(.season)
         showBanner(modeTitle, tr("なぞって、離すと落ちる。同じ作物で合体", "Drag, release to drop. Match crops to merge"))
@@ -390,7 +390,7 @@ final class AppModel {
 
     func showBanner(_ title: String, _ detail: String, tint: BannerTint = .plain) {
         bannerTask?.cancel()
-        withAnimation(.spring(response: 0.35, dampingFraction: 0.8)) { banner = Banner(title: title, detail: detail, tint: tint) }
+        withAnimation(motionOff ? nil : .spring(response: 0.35, dampingFraction: 0.8)) { banner = Banner(title: title, detail: detail, tint: tint) }
         guard !still else { return }
         bannerTask = Task { @MainActor in
             try? await Task.sleep(for: .seconds(2.6))

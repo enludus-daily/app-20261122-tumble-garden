@@ -46,7 +46,7 @@ struct OnboardingView: View {
                 if page < 2 {
                     Button {
                         model.pressed()
-                        withAnimation(.spring(response: 0.4, dampingFraction: 0.85)) { model.onboardingPage += 1 }
+                        withAnimation(model.motionOff ? nil : .spring(response: 0.4, dampingFraction: 0.85)) { model.onboardingPage += 1 }
                     } label: {
                         Text(tr("つぎへ", "Next")).font(Fonts.title(18)).frame(width: 150, height: 52)
                     }

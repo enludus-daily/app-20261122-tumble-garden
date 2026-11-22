@@ -483,7 +483,7 @@ struct BottomBar: View {
                 .accessibilityIdentifier("main.water")
             }
         }
-        .animation(.spring(response: 0.35, dampingFraction: 0.8), value: farm.targetReached)
+        .animation(model.motionOff ? nil : .spring(response: 0.35, dampingFraction: 0.8), value: farm.targetReached)
     }
 
     private var mainTitle: String {

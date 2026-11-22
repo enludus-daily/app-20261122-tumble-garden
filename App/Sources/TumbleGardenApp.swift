@@ -258,24 +258,24 @@ enum Demo {
         farm.drawn = 12
         farm.seasonSales = 18
         model.farm = farm
-        // 連鎖が起きる並び：にんじん・そらまめ・いちごが右へ並び、いちごの上に落とす
+        // 連鎖が起きる並び：にんじんの上にそらまめ、その上にいちごを積み、真上からいちごを落とす
         let s = Season.spring
         model.scene.load([
-            PlacedCrop(crop: Crop(season: s, tier: 5), x: 0.17, y: 0.1),
-            PlacedCrop(crop: Crop(season: s, tier: 4), x: 0.45, y: 0.08),
-            PlacedCrop(crop: Crop(season: s, tier: 3), x: 0.67, y: 0.065),
-            PlacedCrop(crop: Crop(season: s, tier: 2), x: 0.85, y: 0.05),
-            PlacedCrop(crop: Crop(season: s, tier: 1), x: 0.93, y: 0.15),
-            PlacedCrop(crop: Crop(season: s, tier: 0), x: 0.1, y: 0.3),
+            PlacedCrop(crop: Crop(season: s, tier: 5), x: 0.5, y: 0.13),
+            PlacedCrop(crop: Crop(season: s, tier: 4), x: 0.5, y: 0.33),
+            PlacedCrop(crop: Crop(season: s, tier: 3), x: 0.5, y: 0.47),
+            PlacedCrop(crop: Crop(season: s, tier: 2), x: 0.15, y: 0.06),
+            PlacedCrop(crop: Crop(season: s, tier: 1), x: 0.86, y: 0.05),
+            PlacedCrop(crop: Crop(season: s, tier: 0), x: 0.25, y: 0.2),
         ])
         await wait(1.2)
         model.showBanner(tr("今日の畑", "Today's field"), tr("なぞって、離すと落ちる", "Drag, then release to drop"))
-        for x in stride(from: 0.4, through: 0.66, by: 0.04) {
+        for x in stride(from: 0.26, through: 0.5, by: 0.04) {
             model.scene.setAim(x)
             await wait(0.06)
         }
         await wait(0.4)
-        demoDrop(model, Crop(season: s, tier: 3), x: 0.67)
+        demoDrop(model, Crop(season: s, tier: 3), x: 0.5)
         await wait(3.2)
         // 小さな種も落として、次の日へ
         model.scene.setAim(0.86)
