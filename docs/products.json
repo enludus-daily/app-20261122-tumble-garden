@@ -4,14 +4,22 @@
     {
       "type": "NON_CONSUMABLE",
       "productId": "com.enludus.daily.004.pro",
-      "referenceName": "Pro",
+      "referenceName": "Tumble Garden Pro",
       "price": 480,
       "familySharable": true,
-      "reviewNote": "Pro を買うと、すべての〇〇と詳しい振り返りが使えます。課金の画面は設定 > Pro から開けます。",
+      "reviewNote": "Pro unlocks 4 prize crops (the top crops grow one more step), the last 14 daily fields, 4 tool choices at the season shop instead of 3, and 2 bed styles. Open the paywall from Settings > See Pro, or the lock in the Almanac. 設定 > Pro を見る、または図鑑の鍵から開けます。",
       "reviewScreenshot": "docs/iap/paywall.png",
       "localizations": [
-        {"locale": "ja", "name": "Pro", "description": "すべての〇〇と詳しい振り返り"},
-        {"locale": "en-US", "name": "Pro", "description": "All 〇〇 and detailed reviews"}
+        {
+          "locale": "ja",
+          "name": "ころころ菜園 Pro",
+          "description": "品評会の作物4種・過去14日の畑・道具4択・箱2種"
+        },
+        {
+          "locale": "en-US",
+          "name": "Tumble Garden Pro",
+          "description": "4 prize crops, 14 past fields, 4 tool picks"
+        }
       ]
     }
   ]

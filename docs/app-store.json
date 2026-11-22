@@ -1,21 +1,21 @@
 {
   "_doc": "App Store Connect に API で入れる情報（.github/workflows/asc.yml の metadata が読む）。文字数：name・subtitle 30、keywords 100（カンマ区切り）、promotionalText 170、description 4000。カテゴリの ID は EDUCATION・PRODUCTIVITY・UTILITIES・LIFESTYLE・HEALTH_AND_FITNESS など。審査への提出と App プライバシーの申告は本人が行う。",
   "locale": "ja",
-  "name": "",
-  "subtitle": "",
-  "primaryCategory": "",
-  "secondaryCategory": "",
+  "name": "ころころ菜園：落として育てる畑",
+  "subtitle": "合体パズルで季節をめぐる農場ぐらし",
+  "primaryCategory": "GAMES",
+  "secondaryCategory": "ENTERTAINMENT",
   "supportUrl": "https://github.com/enludus-daily/app-20261122-tumble-garden/issues",
   "privacyPolicyUrl": "https://github.com/enludus-daily/app-20261122-tumble-garden/blob/main/PRIVACY.md",
-  "keywords": "",
-  "promotionalText": "",
-  "description": "",
-  "whatToTest": "",
+  "keywords": "合体,パズル,落ちもの,農場,畑,野菜,季節,スイカ,育成,出荷,天気,デイリー,オフライン,広告なし",
+  "promotionalText": "種を落として、同じ作物で合体。大きく育てて出荷し、春夏秋冬をめぐろう。今日の畑は全員同じ種と天気。広告なし。",
+  "description": "木の育て箱に種を落とすと、同じ作物どうしがふれて一段大きく育ちます。種 → 芽 → ラディッシュ → いちご → そらまめ → にんじん → キャベツ。大きく育てた作物を出荷箱へ出荷して、季節ごとの目標に届けば次の季節へ。\n\n■ 季節で作物の段が入れ替わる\n春はいちごとキャベツ、夏はなすととうもろこしとすいか、秋はくりとかぼちゃ、冬はねぎとだいこんとはくさい。季節ごとに決まりも変わります（春は雨が多い・夏はよく育つ・秋は高く売れる・冬は日が短い）。\n\n■ 天気予報で大物を狙う\n雨の日の合体は 2 段育ちます。風の日は落ちる所がずれます。あすの天気を見て、雨の日に大物をそろえよう。\n\n■ 季節の終わりの店\nかかし・堆肥・じょうろ・手押し車など、道具を 3 つから 1 つ選んで次の季節へ。何年目まで続けられるか挑戦しよう。\n\n■ 今日の畑\n日付で決まる畑は、全員同じ種の順番と同じ天気。毎日 1 回の挑戦で、続けた日数と結果が残ります。\n\n■ 図鑑 32 種\n季節ごとに 8 段の作物を集めよう。\n\n■ Pro（買い切り）\n品評会の作物 4 種、過去 14 日の今日の畑、店の道具を 4 つから選べる、育て箱の見た目 2 種。無料でも 1 年を最後まで遊べます。\n\n広告・アカウント・通信はありません。データはこの iPhone の中だけに保存します。",
+  "whatToTest": "なぞって離すと作物が落ちます。同じ作物がふれると合体し、いちごの段から上は長押しか「出荷」で出荷できます。目標に届いたら「次の季節へ」→ 店で道具を選ぶと空が変わります。Pro の購入と復元（設定 > Pro を見る）も確かめてください。",
   "en-US": {
-    "name": "",
-    "subtitle": "",
-    "keywords": "",
-    "promotionalText": "",
-    "description": ""
+    "name": "Tumble Garden: Merge Farm",
+    "subtitle": "Drop, merge & ship all year",
+    "keywords": "merge,drop,puzzle,farm,garden,vegetable,seasons,fruit,harvest,weather,daily,offline,no ads,cozy",
+    "promotionalText": "Drop seeds, merge matching crops, and ship your biggest harvest to move through spring, summer, autumn and winter. Same seeds and weather for everyone each day. No ads.",
+    "description": "Drop seeds into a wooden raised bed. When two matching crops touch, they merge and grow a step: seed, sprout, radish, strawberry, fava bean, carrot, cabbage. Ship your big crops to hit each season's goal and move on to the next season.\n\n- The crop ladder changes every season\nSpring has strawberries and cabbage, summer has eggplant, corn and watermelon, autumn has chestnuts and pumpkins, winter has leeks, daikon and napa cabbage. Each season has its own twist: rainy spring, fast-growing summer, high autumn prices, short winter days.\n\n- Read the forecast\nMerges on rainy days grow two steps. Windy days push your drops sideways. Check tomorrow's weather and line up a big merge for the rain.\n\n- Season shop\nPick one of three tools — scarecrow, compost, watering can, wheelbarrow and more — and see how many years you can keep the farm going.\n\n- Today's field\nEveryone gets the same seeds and the same weather each day. One daily run keeps your streak going.\n\n- Almanac of 32 crops\nCollect 8 crops for each season.\n\n- Pro (one-time purchase)\n4 prize crops, the last 14 daily fields, 4 tool choices at every shop, and 2 bed styles. The full year is free to play.\n\nNo ads, no account, no network. Your data stays on this iPhone."
   }
 }
