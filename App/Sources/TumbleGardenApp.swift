@@ -169,7 +169,8 @@ enum Launch {
     }
 
     static func sampleCrops(_ s: Season, pro: Bool = false) -> [Crop] {
-        let tiers = pro ? [7, 5, 4, 3, 6, 2, 3, 1, 2, 0, 4] : [5, 4, 3, 6, 2, 3, 1, 4, 2, 0, 3, 1]
+        // 同じ段を入れない（撮影の途中で合体が起きないように）
+        let tiers = pro ? [7, 5, 3, 6, 4, 2, 1, 0] : [5, 3, 6, 4, 2, 1, 0]
         return tiers.map { Crop(season: s, tier: $0) }
     }
 
@@ -237,6 +238,9 @@ enum Launch {
         case "paywall": model.activeSheet = .paywall
         default: break
         }
+        // 物理が落ち着いたら描画を止める（撮影の絵を止める。動き続ける描画が右上の黒い丸の原因になる）
+        try? await Task.sleep(for: .milliseconds(1800))
+        model.scenePaused = true
     }
 }
 

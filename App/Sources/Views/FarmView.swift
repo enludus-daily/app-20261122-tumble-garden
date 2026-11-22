@@ -99,10 +99,12 @@ struct StatusPanel: View {
             HStack(alignment: .center, spacing: 10) {
                 // 暦（日めくり）
                 VStack(spacing: 1) {
-                    Text(trf("%d年目", "Year %d", farm.year)).font(Fonts.small(11)).foregroundStyle(Ink.onAccent.opacity(0.9))
+                    Text(trf("%d年目", "Year %d", farm.year)).font(Fonts.small(11)).foregroundStyle(Ink.onAccent.opacity(0.9)).lineLimit(1)
                     Text(farm.season.name).font(Fonts.title(22)).foregroundStyle(Ink.onAccent)
+                        .lineLimit(1).minimumScaleFactor(0.55)
                 }
-                .frame(width: 62, height: 54)
+                .padding(.horizontal, 4)
+                .frame(width: 70, height: 54)
                 .background(ClaySlab(fill: Color(hex: p.accent), edge: Color(hex: p.accentDeep), radius: Radius.chip + 2))
                 VStack(alignment: .leading, spacing: 2) {
                     HStack(alignment: .firstTextBaseline, spacing: 3) {
@@ -270,7 +272,7 @@ struct NextCrops: View {
     var body: some View {
         let next = model.farm.upcoming(3)
         HStack(spacing: 4) {
-            Text(tr("つぎ", "Next")).font(Fonts.small(11)).foregroundStyle(Ink.soft)
+            Text(tr("つぎ", "Next")).font(Fonts.small(11)).foregroundStyle(Ink.soft).fixedSize()
             ForEach(Array(next.enumerated()), id: \.offset) { i, c in
                 CropImage(crop: c, size: i == 0 ? 34 : 24).opacity(i == 0 ? 1 : 0.7)
             }
@@ -325,7 +327,7 @@ struct BedView: View {
             ZStack(alignment: .topLeading) {
                 BedFrame(skin: model.save.skin, plank: plank, soil: soil)
                     .allowsHitTesting(false)
-                SpriteView(scene: model.scene, options: [.allowsTransparency])
+                SpriteView(scene: model.scene, isPaused: model.scenePaused, options: [.allowsTransparency])
                     .frame(width: max(10, geo.size.width - plank * 2), height: max(10, geo.size.height - soil - 4))
                     .offset(x: plank, y: 4)
                     .accessibilityElement()

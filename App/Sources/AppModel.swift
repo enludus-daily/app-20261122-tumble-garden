@@ -52,6 +52,8 @@ final class AppModel {
     var onboardingPage = 0
     /// 季節が変わった瞬間（空の色を 1 秒かけて移す）
     var seasonFlip = 0
+    /// 撮影のとき、物理が落ち着いたら SpriteKit の描画を止める（止まった絵にする）
+    var scenePaused = false
 
     // 手応え（sensoryFeedback の引き金）
     var pressTick = 0
@@ -87,7 +89,18 @@ final class AppModel {
             farm = run.farm
             scene.load(run.crops)
             reachedAnnounced = farm.targetReached
+        } else {
+            scene.load(AppModel.starter(farm.season))
         }
+    }
+
+    /// 新しい畑の最初の作物（空の箱から始めない。最初の 1 回で合体が起きやすい並び）
+    static func starter(_ season: Season) -> [PlacedCrop] {
+        [
+            PlacedCrop(crop: Crop(season: season, tier: 2), x: 0.22, y: 0.06),
+            PlacedCrop(crop: Crop(season: season, tier: 1), x: 0.52, y: 0.045),
+            PlacedCrop(crop: Crop(season: season, tier: 0), x: 0.78, y: 0.035),
+        ]
     }
 
     var today: String { Days.key(now, calendar: calendar) }
@@ -164,7 +177,7 @@ final class AppModel {
         farm = Farm(seed: newMode.seed, isPro: isPro)
         result = nil
         reachedAnnounced = false
-        scene.load([])
+        scene.load(AppModel.starter(farm.season))
         scene.setAim(0.5)
         seasonFlip += 1
         activeSheet = nil

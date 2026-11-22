@@ -283,7 +283,8 @@ struct DailyStrip: View {
     @Environment(AppModel.self) private var model
 
     var body: some View {
-        let days = (0..<14).reversed().map { Days.offset(model.now, days: -$0, calendar: model.calendar) }
+        // 今日をいちばん左に（新しい順）
+        let days = (0..<14).map { Days.offset(model.now, days: -$0, calendar: model.calendar) }
         VStack(alignment: .leading, spacing: 6) {
             HStack {
                 Text(tr("今日の畑（14 日）", "Daily fields (14 days)")).font(Fonts.title(15)).foregroundStyle(Ink.text)
@@ -394,9 +395,11 @@ struct PaywallSheet: View {
         let product = model.purchases.products.first
         SheetFrame(title: tr("ころころ菜園 Pro", "Tumble Garden Pro")) {
             VStack(alignment: .leading, spacing: 14) {
-                HStack(spacing: -6) {
+                HStack(spacing: 4) {
                     ForEach(Season.allCases, id: \.self) { s in
-                        CropImage(crop: Crop(season: s, tier: Crop.proTop), size: 78)
+                        CropImage(crop: Crop(season: s, tier: Crop.proTop), size: 70)
+                            .frame(width: 76, height: 76)
+                            .background(Circle().fill(Color(hex: SeasonPalette.of(s).skyTop).opacity(0.45)))
                     }
                 }
                 .frame(maxWidth: .infinity)
