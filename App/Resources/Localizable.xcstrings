@@ -1,7 +1,448 @@
 {
   "sourceLanguage": "ja",
   "strings": {
+    "%@ で Pro にする": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Get Pro for %@"
+          }
+        }
+      }
+    },
+    "%@ の畑": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Field of %@"
+          }
+        }
+      }
+    },
+    "%@ より大きく育ててから": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grow crops to %@ or bigger first"
+          }
+        }
+      }
+    },
+    "%@の出荷おわり！": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ shipped!"
+          }
+        }
+      }
+    },
+    "%@・あと %d 日": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ · %d days left"
+          }
+        }
+      }
+    },
+    "%d 年目の%@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Y%d %@"
+          }
+        }
+      }
+    },
+    "%d 日つづけて": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%d-day streak"
+          }
+        }
+      }
+    },
+    "%d年目": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Year %d"
+          }
+        }
+      }
+    },
+    "%d年目の%@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Year %d · %@"
+          }
+        }
+      }
+    },
+    "%d年目の%@まで": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reached Year %d, %@"
+          }
+        }
+      }
+    },
+    "1 回だけ、箱からあふれても助かる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saves you once when the bed overflows"
+          }
+        }
+      }
+    },
+    "1 回の購入で、ずっと": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "One purchase, forever"
+          }
+        }
+      }
+    },
+    "App Store に接続できません。あとでもう一度お試しください": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Can't reach the App Store. Please try again later"
+          }
+        }
+      }
+    },
+    "Pro なら、いつも 4 つから選べる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "With Pro, always choose from 4"
+          }
+        }
+      }
+    },
+    "Pro にする": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Get Pro"
+          }
+        }
+      }
+    },
+    "Pro を使っています。ありがとう！": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You have Pro. Thank you!"
+          }
+        }
+      }
+    },
+    "Pro を見る": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "See Pro"
+          }
+        }
+      }
+    },
+    "あす": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tmrw"
+          }
+        }
+      }
+    },
+    "いちごの段から上は、長押しか「出荷」で出荷箱へ。大きいほど高く売れる。点線の上に 2 秒いたらあふれ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "From strawberries up, long-press or tap Ship to sell. Bigger sells higher. Stay above the dotted line 2 s and it overflows"
+          }
+        }
+      }
+    },
+    "いちばんの作物": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Best crop"
+          }
+        }
+      }
+    },
+    "いちばんの作物：%@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Best crop: %@"
+          }
+        }
+      }
+    },
+    "いちばんの売上": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Best sales"
+          }
+        }
+      }
+    },
+    "いちばん上の段どうしが、もう一段育つ：メロン・ひまわり・おばけかぼちゃ・大きなかぶ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Top crops grow one step further: melon, sunflower, giant pumpkin, giant turnip"
+          }
+        }
+      }
+    },
+    "いちばん先の季節": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Furthest season"
+          }
+        }
+      }
+    },
+    "いちばん大きな%@を、次の季節へ持ち越す": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your biggest crop carries over as %@"
+          }
+        }
+      }
+    },
+    "いまの畑を終えて、自由な畑をはじめる？": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "End this field and start a free one?"
+          }
+        }
+      }
+    },
+    "かかし": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scarecrow"
+          }
+        }
+      }
+    },
+    "かかしが守った！": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scarecrow saved you!"
+          }
+        }
+      }
+    },
+    "この日の合体は 2 段育つ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Merges today grow 2 steps"
+          }
+        }
+      }
+    },
+    "ころころ菜園": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tumble Garden"
+          }
+        }
+      }
+    },
+    "ころころ菜園 %@ の畑": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tumble Garden — field of %@"
+          }
+        }
+      }
+    },
+    "ころころ菜園 Pro": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tumble Garden Pro"
+          }
+        }
+      }
+    },
+    "じょうろ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Watering can"
+          }
+        }
+      }
+    },
+    "じょうろ ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Can"
+          }
+        }
+      }
+    },
+    "じょうろがない": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No watering can"
+          }
+        }
+      }
+    },
+    "つぎ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Next"
+          }
+        }
+      }
+    },
+    "つぎへ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Next"
+          }
+        }
+      }
+    },
+    "なぞって、離すと落ちる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Drag, then release to drop"
+          }
+        }
+      }
+    },
+    "なぞって、離すと落ちる。同じ作物で合体": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Drag, release to drop. Match crops to merge"
+          }
+        }
+      }
+    },
+    "はじめての %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "First %@"
+          }
+        }
+      }
+    },
     "はじめる": {
+      "extractionState": "manual",
       "localizations": {
         "en": {
           "stringUnit": {
@@ -11,32 +452,1179 @@
         }
       }
     },
-    "リセット": {
+    "ふつうの日": {
+      "extractionState": "manual",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Reset"
+            "value": "A normal day"
           }
         }
       }
     },
-    "1 たす": {
+    "まだ何も育てていない": {
+      "extractionState": "manual",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Add 1"
+            "value": "Nothing grown yet"
           }
         }
       }
     },
-    "回数 %lld": {
+    "まだ出荷できない": {
+      "extractionState": "manual",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Count %lld"
+            "value": "Nothing to ship yet"
+          }
+        }
+      }
+    },
+    "まだ育てていない": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not grown yet"
+          }
+        }
+      }
+    },
+    "やめる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancel"
+          }
+        }
+      }
+    },
+    "データはこの端末の中だけに保存します。通信・広告・追跡はありません。": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your data stays on this device. No network, ads, or tracking."
+          }
+        }
+      }
+    },
+    "プライバシーポリシー": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Privacy policy"
+          }
+        }
+      }
+    },
+    "下の「次の季節へ」で進める。残った日は手当てになる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tap Next season below. Leftover days pay a bonus"
+          }
+        }
+      }
+    },
+    "今季を締める": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Close season"
+          }
+        }
+      }
+    },
+    "今年の合計": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Run total"
+          }
+        }
+      }
+    },
+    "今年の売上 %d ・ いちばん %d": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Total %d · Best %d"
+          }
+        }
+      }
+    },
+    "今年はここまで": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Season's over"
+          }
+        }
+      }
+    },
+    "今日": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Today"
+          }
+        }
+      }
+    },
+    "今日の畑": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Today's field"
+          }
+        }
+      }
+    },
+    "今日の畑は全員同じ種と天気。明日はまた別の畑": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Everyone gets the same seeds and weather today. A new field tomorrow"
+          }
+        }
+      }
+    },
+    "今日の畑をもう一度": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Replay today's field"
+          }
+        }
+      }
+    },
+    "今日の畑・続けた日": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Daily streak"
+          }
+        }
+      }
+    },
+    "今日の畑（14 日）": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Daily fields (14 days)"
+          }
+        }
+      }
+    },
+    "今日は雨": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rainy day"
+          }
+        }
+      }
+    },
+    "今日は雨にした": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Made it rain today"
+          }
+        }
+      }
+    },
+    "冬": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Winter"
+          }
+        }
+      }
+    },
+    "冬は日が短い。18 日で出荷する": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Short days. Only 18 days to ship"
+          }
+        }
+      }
+    },
+    "出荷": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ship"
+          }
+        }
+      }
+    },
+    "出荷して目標に届かせよう。終わったら「締める」": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ship to reach the goal, then tap Close"
+          }
+        }
+      }
+    },
+    "出荷の目標に届いた！": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shipping goal reached!"
+          }
+        }
+      }
+    },
+    "効果音": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sound effects"
+          }
+        }
+      }
+    },
+    "合体が 2 段育つ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Merges grow 2 steps"
+          }
+        }
+      }
+    },
+    "合体が 2 段育つ。大物を狙おう": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Merges grow 2 steps. Go big"
+          }
+        }
+      }
+    },
+    "同じ作物がふれると合体して一段大きく育つ。雨の日は 2 段。1 回落とすと 1 日が過ぎる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Matching crops merge and grow a step — two on rainy days. Each drop is one day"
+          }
+        }
+      }
+    },
+    "品評会 +%d": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fair prize +%d"
+          }
+        }
+      }
+    },
+    "品評会の作物 4 種": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "4 prize crops"
+          }
+        }
+      }
+    },
+    "図鑑": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Almanac"
+          }
+        }
+      }
+    },
+    "図鑑と記録": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Almanac & records"
+          }
+        }
+      }
+    },
+    "図鑑に入った": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Added to your almanac"
+          }
+        }
+      }
+    },
+    "堆肥": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compost"
+          }
+        }
+      }
+    },
+    "売上 %d": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sales %d"
+          }
+        }
+      }
+    },
+    "売上 %d / 目標 %d": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%d of %d shipped"
+          }
+        }
+      }
+    },
+    "売上の合計": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Total sales"
+          }
+        }
+      }
+    },
+    "売上（目標 %d）": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sales (goal %d)"
+          }
+        }
+      }
+    },
+    "夏": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Summer"
+          }
+        }
+      }
+    },
+    "夏はよく育つ。芽から落ちてくる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Summer grows fast. Sprouts fall more often"
+          }
+        }
+      }
+    },
+    "夕暮れの畑": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dusk field"
+          }
+        }
+      }
+    },
+    "夕暮れの畑・温室": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dusk field and greenhouse"
+          }
+        }
+      }
+    },
+    "大きく育てて出荷する": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grow big, then ship"
+          }
+        }
+      }
+    },
+    "大きな出荷箱": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Big crate"
+          }
+        }
+      }
+    },
+    "好きな日を 1 回、雨の日にする": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turn any one day into a rainy day"
+          }
+        }
+      }
+    },
+    "季節ごとに作物の段が入れ替わる。天気予報を見て、雨の日に大物を狙おう。店で道具を 1 つ選べる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Each season swaps the crop ladder. Watch the forecast and go big on rainy days. Pick a tool at the shop"
+          }
+        }
+      }
+    },
+    "季節の終わりの店で手に入る": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pick one up at the season shop"
+          }
+        }
+      }
+    },
+    "季節の終わりの選択肢が 1 つ増える": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "One more choice at every season's end"
+          }
+        }
+      }
+    },
+    "実りの秋。出荷の値が 1.2 倍": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Harvest season. Crops sell for 1.2×"
+          }
+        }
+      }
+    },
+    "店の道具を 4 つから選べる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shop offers 4 tools"
+          }
+        }
+      }
+    },
+    "手押し車": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wheelbarrow"
+          }
+        }
+      }
+    },
+    "承認を待っています": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Waiting for approval"
+          }
+        }
+      }
+    },
+    "振動": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Haptics"
+          }
+        }
+      }
+    },
+    "日のこり": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "days left"
+          }
+        }
+      }
+    },
+    "春": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spring"
+          }
+        }
+      }
+    },
+    "春は雨が多い。雨の日の合体は 2 段育つ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spring brings rain. Rainy merges grow 2 steps"
+          }
+        }
+      }
+    },
+    "晴れ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sunny"
+          }
+        }
+      }
+    },
+    "最後の日": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Last day"
+          }
+        }
+      }
+    },
+    "杉の育て箱": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cedar bed"
+          }
+        }
+      }
+    },
+    "次の 3 つの種が 1 段育って落ちる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Next 3 drops fall one step bigger"
+          }
+        }
+      }
+    },
+    "次の季節の日数が 4 日ふえる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Next season lasts 4 more days"
+          }
+        }
+      }
+    },
+    "次の季節の目標が 15% 下がる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Next season's goal is 15% lower"
+          }
+        }
+      }
+    },
+    "次の季節は、いちごの段から出荷できる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Next season, ship from step 3 up"
+          }
+        }
+      }
+    },
+    "次の季節は風でずれない": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No wind drift next season"
+          }
+        }
+      }
+    },
+    "次の季節へ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Next season"
+          }
+        }
+      }
+    },
+    "次は %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Next: %@"
+          }
+        }
+      }
+    },
+    "次は %@：%@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Next: %@ — %@"
+          }
+        }
+      }
+    },
+    "温室": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Greenhouse"
+          }
+        }
+      }
+    },
+    "無料でも 1 年を最後まで遊べます。広告はありません。": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The full year is free to play. No ads, ever."
+          }
+        }
+      }
+    },
+    "片付けと残りの日": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leftovers & spare days"
+          }
+        }
+      }
+    },
+    "畑にもどる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Back to the field"
+          }
+        }
+      }
+    },
+    "畑に種を落とすと、育てた作物がここに並ぶ。32 種を集めよう": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Drop seeds in the bed and your crops show up here. Collect all 32"
+          }
+        }
+      }
+    },
+    "畑をはじめる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start farming"
+          }
+        }
+      }
+    },
+    "目標 %d": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Goal %d"
+          }
+        }
+      }
+    },
+    "目標に届いた。次の季節へ進もう": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Goal reached. On to the next season"
+          }
+        }
+      }
+    },
+    "目標に届かなかった": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Missed the shipping goal"
+          }
+        }
+      }
+    },
+    "目標に届けば、次の季節へ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hit the goal, move to the next season"
+          }
+        }
+      }
+    },
+    "秋": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autumn"
+          }
+        }
+      }
+    },
+    "箱からあふれた": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The bed overflowed"
+          }
+        }
+      }
+    },
+    "結果を共有": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Share result"
+          }
+        }
+      }
+    },
+    "結果を見る": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "See results"
+          }
+        }
+      }
+    },
+    "続けた日（最長 %d）": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Streak (best %d)"
+          }
+        }
+      }
+    },
+    "育てた作物 %d / 32": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crops grown %d / 32"
+          }
+        }
+      }
+    },
+    "育て箱。なぞって離すと落とす。大きな作物は長押しで出荷": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Raised bed. Drag and release to drop. Long-press big crops to ship"
+          }
+        }
+      }
+    },
+    "育て箱の見た目": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bed style"
+          }
+        }
+      }
+    },
+    "育て箱の見た目 2 種": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2 bed styles"
+          }
+        }
+      }
+    },
+    "自由な畑": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Free field"
+          }
+        }
+      }
+    },
+    "自由な畑で、もう 1 年": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Another year (free field)"
+          }
+        }
+      }
+    },
+    "落ちる所がずれる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Drops drift sideways"
+          }
+        }
+      }
+    },
+    "落として合体、出荷して季節を進める": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Drop, merge, ship — and grow through the seasons"
+          }
+        }
+      }
+    },
+    "落とす": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Drop"
+          }
+        }
+      }
+    },
+    "見のがした日の畑も、同じ種と天気で遊べる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Play the days you missed with the same seeds and weather"
+          }
+        }
+      }
+    },
+    "設定": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Settings"
+          }
+        }
+      }
+    },
+    "豊作のお守り": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Harvest charm"
+          }
+        }
+      }
+    },
+    "購入できませんでした。もう一度お試しください": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Purchase failed. Please try again"
+          }
+        }
+      }
+    },
+    "購入を復元": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restore purchases"
+          }
+        }
+      }
+    },
+    "遊び方をもう一度見る": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How to play"
+          }
+        }
+      }
+    },
+    "過去 14 日の今日の畑": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Last 14 daily fields"
+          }
+        }
+      }
+    },
+    "過去の日も遊べる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Replay past days"
+          }
+        }
+      }
+    },
+    "道具を 1 つえらぶ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pick one tool"
+          }
+        }
+      }
+    },
+    "閉じる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Close"
+          }
+        }
+      }
+    },
+    "防風ネット": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Windbreak"
+          }
+        }
+      }
+    },
+    "雨": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rain"
+          }
+        }
+      }
+    },
+    "雨 ×%d": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rain ×%d"
+          }
+        }
+      }
+    },
+    "雨で 2 段！": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rain: +2!"
+          }
+        }
+      }
+    },
+    "風": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Windy"
           }
         }
       }
