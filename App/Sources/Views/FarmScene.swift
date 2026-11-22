@@ -293,7 +293,8 @@ final class FarmScene: SKScene {
     private func merge(_ a: CropNode, _ b: CropNode, _ model: AppModel) {
         a.merging = true
         b.merging = true
-        let mid = CGPoint(x: (a.position.x + b.position.x) / 2, y: (a.position.y + b.position.y) / 2)
+        // 下にあった方の場所で育つ（積み上がった上に落とすと、その場で大きくなる）
+        let mid = a.position.y <= b.position.y ? a.position : b.position
         let v = CGVector(dx: ((a.physicsBody?.velocity.dx ?? 0) + (b.physicsBody?.velocity.dx ?? 0)) / 2, dy: 0)
         let outcome = model.merged(a.crop)
         let calm = model.motionOff

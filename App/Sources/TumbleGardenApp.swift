@@ -258,15 +258,14 @@ enum Demo {
         farm.drawn = 12
         farm.seasonSales = 18
         model.farm = farm
-        // 連鎖が起きる並び：にんじんの上にそらまめ、その上にいちごを積み、真上からいちごを落とす
+        // 真ん中のいちごの上に、同じ作物を 3 回落とす：いちご → そらまめ → にんじん → キャベツ
         let s = Season.spring
         model.scene.load([
-            PlacedCrop(crop: Crop(season: s, tier: 5), x: 0.5, y: 0.13),
-            PlacedCrop(crop: Crop(season: s, tier: 4), x: 0.5, y: 0.33),
-            PlacedCrop(crop: Crop(season: s, tier: 3), x: 0.5, y: 0.47),
-            PlacedCrop(crop: Crop(season: s, tier: 2), x: 0.15, y: 0.06),
-            PlacedCrop(crop: Crop(season: s, tier: 1), x: 0.86, y: 0.05),
-            PlacedCrop(crop: Crop(season: s, tier: 0), x: 0.25, y: 0.2),
+            PlacedCrop(crop: Crop(season: s, tier: 3), x: 0.5, y: 0.07),
+            PlacedCrop(crop: Crop(season: s, tier: 2), x: 0.12, y: 0.06),
+            PlacedCrop(crop: Crop(season: s, tier: 1), x: 0.88, y: 0.05),
+            PlacedCrop(crop: Crop(season: s, tier: 0), x: 0.24, y: 0.05),
+            PlacedCrop(crop: Crop(season: s, tier: 1), x: 0.72, y: 0.05),
         ])
         await wait(1.2)
         model.showBanner(tr("今日の畑", "Today's field"), tr("なぞって、離すと落ちる", "Drag, then release to drop"))
@@ -274,19 +273,14 @@ enum Demo {
             model.scene.setAim(x)
             await wait(0.06)
         }
-        await wait(0.4)
-        demoDrop(model, Crop(season: s, tier: 3), x: 0.5)
-        await wait(3.2)
-        // 小さな種も落として、次の日へ
-        model.scene.setAim(0.86)
-        await wait(0.4)
-        demoDrop(model, Crop(season: s, tier: 2), x: 0.86)
-        await wait(1.8)
-        // いちばん大きな作物を出荷
+        await wait(0.3)
+        for tier in 3...5 {
+            demoDrop(model, Crop(season: s, tier: tier), x: 0.5)
+            await wait(tier == 5 ? 2.2 : 1.7)
+        }
+        // いちばん大きな作物（キャベツ）を出荷
         model.harvestButton()
-        await wait(1.4)
-        model.harvestButton()
-        await wait(2.2)
+        await wait(2.0)
         if model.farm.seasonSales < model.farm.target {
             model.farm.seasonSales = model.farm.target
         }

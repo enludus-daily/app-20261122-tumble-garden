@@ -361,7 +361,7 @@ final class AppModel {
         let title = trf("%d年目の%@", "Year %d · %@", farm.year, farm.season.name)
         showBanner(title, farm.season.rule)
         // 価値を感じた直後（はじめて季節を越えたとき）にだけ、1 回 Pro を見せる
-        if !paywallOffered && !isPro && farm.seasonsCleared == 1 && !still {
+        if !paywallOffered && !isPro && farm.seasonsCleared == 1 && !still && !Launch.isDemo {
             paywallOffered = true
             persist()
             Task { @MainActor in
