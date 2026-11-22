@@ -240,6 +240,7 @@ enum Launch {
         }
         // 物理が落ち着いたら描画を止める（撮影の絵を止める。動き続ける描画が右上の黒い丸の原因になる）
         try? await Task.sleep(for: .milliseconds(1800))
+        model.frozen = model.scene.freezeImage()
         model.scenePaused = true
     }
 }

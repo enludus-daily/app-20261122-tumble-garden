@@ -292,7 +292,16 @@ struct Farm: Codable, Equatable, Sendable {
 
     func canHarvest(_ crop: Crop) -> Bool { !over && !shopping && crop.tier >= minHarvestTier }
 
-    func price(_ crop: Crop) -> Int { Int((Double(crop.basePrice) * season.priceRate).rounded()) }
+    /// 市場の高値：季節ごとに 1 つ、出荷の値が 2 倍になる作物（3〜5 段。種で決まるので今日の畑は全員同じ）
+    var marketPick: Crop {
+        var rng = roll(0x7A11, progressIndex, 0)
+        return Crop(season: season, tier: 3 + Int(rng.unit() * 3))
+    }
+
+    func price(_ crop: Crop) -> Int {
+        let pick = crop == marketPick ? 2.0 : 1.0
+        return Int((Double(crop.basePrice) * season.priceRate * pick).rounded())
+    }
 
     /// 出荷箱へ。売れた額（出荷できない段なら nil）
     mutating func harvest(_ crop: Crop) -> Int? {

@@ -1,6 +1,7 @@
 import Foundation
 import Observation
 import SwiftUI
+import UIKit
 
 enum ActiveSheet: String, Identifiable {
     case shop, result, almanac, settings, paywall
@@ -54,6 +55,8 @@ final class AppModel {
     var seasonFlip = 0
     /// 撮影のとき、物理が落ち着いたら SpriteKit の描画を止める（止まった絵にする）
     var scenePaused = false
+    /// 撮影のとき、箱の中を止まった絵に差し替える（SpriteKit の描画を画面から外す）
+    var frozen: UIImage?
 
     // 手応え（sensoryFeedback の引き金）
     var pressTick = 0

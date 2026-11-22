@@ -248,6 +248,13 @@ final class FarmScene: SKScene {
         }
     }
 
+    /// 箱の中の今の絵（撮影で止まった絵に差し替えるため）
+    func freezeImage() -> UIImage? {
+        guard let view, view.bounds.width > 0 else { return nil }
+        let renderer = UIGraphicsImageRenderer(bounds: view.bounds)
+        return renderer.image { _ in _ = view.drawHierarchy(in: view.bounds, afterScreenUpdates: true) }
+    }
+
     // MARK: 毎フレーム
 
     override func update(_ currentTime: TimeInterval) {

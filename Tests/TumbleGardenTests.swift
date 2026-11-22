@@ -137,8 +137,8 @@ struct HarvestAndSeasonTests {
         let r5 = farm.harvest(Crop(season: .spring, tier: 2))
         #expect(r5 == nil)
         let r6 = farm.harvest(Crop(season: .spring, tier: 3))
-        #expect(r6 == Crop.prices[3])
-        #expect(farm.seasonSales == Crop.prices[3])
+        #expect(r6 == farm.price(Crop(season: .spring, tier: 3)))
+        #expect(farm.seasonSales == r6)
     }
 
     @Test func aBigCrateLetsYouShipSmallerCrops() {
@@ -151,7 +151,17 @@ struct HarvestAndSeasonTests {
     @Test func autumnPaysMore() {
         var farm = Farm(seed: 5)
         farm.season = .autumn
-        #expect(farm.price(Crop(season: .autumn, tier: 5)) == 96)
+        let crop = (3...5).map { Crop(season: .autumn, tier: $0) }.first { $0 != farm.marketPick }!
+        #expect(farm.price(crop) == Int((Double(crop.basePrice) * 1.2).rounded()))
+    }
+
+    @Test func theMarketPickSellsForDouble() {
+        let farm = Farm(seed: 5)
+        let pick = farm.marketPick
+        #expect((3...5).contains(pick.tier))
+        #expect(pick.season == farm.season)
+        #expect(farm.price(pick) == pick.basePrice * 2)
+        #expect(Farm(seed: 5).marketPick == pick)
     }
 
     @Test func reachingTheTargetLetsTheSeasonAdvance() {
@@ -162,7 +172,7 @@ struct HarvestAndSeasonTests {
         let end = farm.endSeason(leftovers: [Crop(season: .spring, tier: 1), Crop(season: .spring, tier: 4), Crop(season: .spring, tier: 3)])
         // いちばん大きな 1 つを次の季節の同じ段として残し、ほかは半値＋残りの日の手当て
         #expect(end?.kept == Crop(season: .summer, tier: 4))
-        #expect(end?.sold == Crop.prices[1] / 2 + Crop.prices[3] / 2 + farm.daysLeft * 2)
+        #expect(end?.sold == Crop.prices[1] / 2 + farm.price(Crop(season: .spring, tier: 3)) / 2 + farm.daysLeft * 2)
         #expect(farm.shopping)
         farm.chooseAndAdvance(nil)
         #expect(farm.season == .summer)

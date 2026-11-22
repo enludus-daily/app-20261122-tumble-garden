@@ -113,6 +113,16 @@ struct StatusPanel: View {
                         Text(tr("日のこり", "days left")).font(Fonts.small(12)).foregroundStyle(Ink.soft)
                     }
                     DayStrip(total: farm.days, used: farm.day, accent: Color(hex: p.accent))
+                    // 市場の高値（この季節は 2 倍で売れる）
+                    HStack(spacing: 3) {
+                        Text(tr("高値", "Hot")).font(Fonts.small(10)).foregroundStyle(.white)
+                            .padding(.horizontal, 5).padding(.vertical, 1)
+                            .background(Capsule().fill(Ink.coin))
+                        CropImage(crop: farm.marketPick, size: 20)
+                        Text(trf("%@ ×2", "%@ ×2", CropBook.info(farm.marketPick).name)).font(Fonts.small(11)).foregroundStyle(Ink.coinDeep)
+                            .lineLimit(1).minimumScaleFactor(0.7)
+                    }
+                    .accessibilityElement(children: .combine)
                 }
                 Spacer(minLength: 0)
                 ShipMeter()
@@ -327,7 +337,13 @@ struct BedView: View {
             ZStack(alignment: .topLeading) {
                 BedFrame(skin: model.save.skin, plank: plank, soil: soil)
                     .allowsHitTesting(false)
-                SpriteView(scene: model.scene, isPaused: model.scenePaused, options: [.allowsTransparency])
+                Group {
+                    if let frozen = model.frozen {
+                        Image(uiImage: frozen).resizable()
+                    } else {
+                        SpriteView(scene: model.scene, isPaused: model.scenePaused, options: [.allowsTransparency])
+                    }
+                }
                     .frame(width: max(10, geo.size.width - plank * 2), height: max(10, geo.size.height - soil - 4))
                     .offset(x: plank, y: 4)
                     .accessibilityElement()
